@@ -1,1 +1,18 @@
-/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.pane1 {
+	-fx-background-image: url(fondo1.jpg);
+}
+
+.pane2 {
+	-fx-background-image: url(fondo2.jpg);
+	-fx-background-size: 85%;
+	
+}
+
+.pane3 {
+	-fx-background-image: url(fondo3.jpg);
+}
+
+.pane4 {
+	-fx-background-image: url(fondo4.jpg);
+	-fx-background-size: 100%;
+}

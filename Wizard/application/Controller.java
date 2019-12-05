@@ -2,9 +2,12 @@ package application;
 
 import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class Controller {
@@ -20,8 +23,6 @@ public class Controller {
 
 	@FXML
 	private Label countLabel;
-	
-
 
 	public void translateAnimation(double duration, Node node, double byX) {
 
@@ -52,9 +53,24 @@ public class Controller {
 			countLabel.setText("3/3");
 
 		} else {
-			System.out.println("No more slides");
+			showMenu();
 		}
 
+	}
+
+	// método para que me lleve al slided login
+	@FXML
+	public void showMenu() {
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("slidedLogin.fxml"));
+			AnchorPane root = loader.load();
+			Stage stage = new Stage();
+			stage.setTitle("Slided Login");
+			stage.setScene(new Scene(root));
+			stage.show();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@FXML

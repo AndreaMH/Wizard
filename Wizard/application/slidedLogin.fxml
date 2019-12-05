@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller2">
+   <children>
+      <Pane fx:id="pane1" prefHeight="200.0" prefWidth="200.0" styleClass="pane1" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="pane2" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" styleClass="pane2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="pane3" prefHeight="200.0" prefWidth="200.0" styleClass="pane3" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Pane fx:id="pane4" cacheShape="false" prefHeight="200.0" prefWidth="200.0" styleClass="pane4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <VBox alignment="CENTER" layoutX="333.0" layoutY="72.0" prefHeight="400.0" prefWidth="240.0" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 10;" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <children>
+            <ImageView fitHeight="170.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@avocado.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="-50.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label text="Sign in" textFill="#00b941">
+               <font>
+                  <Font name="Microsoft JhengHei UI Light" size="28.0" />
+               </font>
+            </Label>
+            <Label text="Te comía avocados" textFill="#b2b2b2" />
+            <JFXTextField focusColor="#03941b" labelFloat="true" promptText="Username" unFocusColor="BLACK" />
+            <JFXPasswordField focusColor="#45e154" labelFloat="true" promptText="Password" />
+            <JFXButton buttonType="RAISED" prefHeight="26.0" prefWidth="900.0" ripplerFill="WHITE" style="-fx-background-color: #6FF376;" text="Get started" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <HBox>
+               <children>
+                  <Label prefWidth="106.0" text="Forgot password?" textAlignment="CENTER" textFill="#b2b2b2">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Label text="Create a new account " textAlignment="CENTER" textFill="#b2b2b2">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="-50.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
