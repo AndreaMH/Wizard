@@ -38,7 +38,7 @@
             <Label text="Te comía avocados" textFill="#b2b2b2" />
             <JFXTextField focusColor="#03941b" labelFloat="true" promptText="Username" unFocusColor="BLACK" />
             <JFXPasswordField focusColor="#45e154" labelFloat="true" promptText="Password" />
-            <JFXButton buttonType="RAISED" prefHeight="26.0" prefWidth="900.0" ripplerFill="WHITE" style="-fx-background-color: #6FF376;" text="Get started" textFill="WHITE">
+            <JFXButton buttonType="RAISED" onAction="#showMenu" prefHeight="26.0" prefWidth="900.0" ripplerFill="WHITE" style="-fx-background-color: #6FF376;" text="Get started" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
