@@ -2,7 +2,11 @@ package application;
 
 import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class Controller2 {
@@ -88,5 +92,19 @@ public class Controller2 {
 
 				});
 
+	}
+	
+	@FXML
+	private void showMenu() {
+		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("homePage.fxml"));
+			AnchorPane root = loader.load();
+			Stage stage = new Stage();
+			stage.setTitle("Home Page");
+			stage.setScene(new Scene(root));
+			stage.show();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }

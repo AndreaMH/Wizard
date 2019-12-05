@@ -16,3 +16,27 @@
 	-fx-background-image: url(fondo4.jpg);
 	-fx-background-size: 100%;
 }
+
+.boton :hover {
+    -fx-background-color: #78FB51;   
+}
+
+.pane1HP {
+	-fx-background-image: url(1.jpg);
+	-fx-background-size: 100%;
+}
+
+.pane2HP {
+	-fx-background-image: url(2.jpg);
+	-fx-background-size: 100%;
+}
+
+.pane3HP {
+	-fx-background-image: url(3.jpg);
+	-fx-background-size: 100%;
+}
+
+.pane4HP {
+	-fx-background-image: url(4.jpg);
+	-fx-background-size: 100%;
+}
